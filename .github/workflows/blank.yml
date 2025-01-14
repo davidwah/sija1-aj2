@@ -40,3 +40,6 @@ jobs:
 
       - name: File Python
         run: python nama.py
+
+      - name: File Secrete
+        run: python rahasia.py
