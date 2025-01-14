@@ -41,5 +41,8 @@ jobs:
       - name: File Python
         run: python nama.py
 
+      - name: Instal Python libs
+        run: pip install python-dotenv
+
       - name: File Secrete
         run: python rahasia.py

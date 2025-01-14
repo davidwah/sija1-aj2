@@ -1,4 +1,10 @@
-nama_depan = ${{ secrets.VARIABLE_DEPAN }}
-nama_belakang = ${{ secrets.VARIABLE_BELAKANG }}
+from dotenv import load_dotenv
+import os
 
-print(nama_belakang + nama_belakang)
+load_dotenv()
+
+nama_depan = os.getenv("VARIABLE_DEPAN")
+nama_belakang = os.getenv("VARIABLE_BELAKANG")
+
+print("VARIABLE_DEPAN: ", nama_depan)
+print("VARIABLE_BELAKANG: ", nama_belakang)
